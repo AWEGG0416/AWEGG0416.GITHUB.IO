@@ -1,13 +1,29 @@
 <html>
 <head>
+    <script>
+        function setIframeSource() {
+            // behavior of myIframe
+            var theSelect = document.getElementById('location');
+            var theIframe = document.getElementById('myIframe');
+            var theUrl;
+            theUrl = theSelect.options[theSelect.selectedIndex].value;
+            theIframe.src = theUrl;
+
+        }
+    </script>
 </head>
 <body>
-   <select name="VESSEL" target="iframe">
-    <option value="">선박 선택</option>
-    <option value="https://AWEGG0416.GITHUB.IO/V.DONJUAN.HTML" target = "TWO">Don Juan</option>
-    <option value="Donjuna2"><a href="https://AWEGG0416.GITHUB.IO/V.DONJUAN.HTML" target = "TWO"></a>Don Juan2</option>
-    <option value="https://AWEGG0416.GITHUB.IO/test.HTML">회사원</option>
-    <option value="기타">기타</option>
-</select>
-</body>
+    <form id="form1" method="post">
+       <label> Selecione a rede</label>
+        <select id="location" onchange="setIframeSource()"> 
+          <option value="http://example.com/">선박선택</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/V.DONJUAN.HTML">Don Juan</option> 
+          <option value="https://www.americanas.com.br/">AMERICANAS</option> 
+          <option value="https://www.bbc.com/">BBC</option> 
+       </select>
+    </form>
+    <iframe id="myIframe" src="http://example.com/" frameborder="0" marginwidth="0" marginheight="0" width=100% height=100%></iframe>
+
+
+    </body>
 </html>
