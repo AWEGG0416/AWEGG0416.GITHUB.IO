@@ -1,5 +1,6 @@
 <html>
 <head>
+        <meta name="viewport" content="width=device-width,initial-scale=0.78">
     <script>
         function setIframeSource() {
             // behavior of myIframe
@@ -14,9 +15,10 @@
 </head>
 <body>
     <form id="form1" method="post">
-       <label> Selecione a rede</label>
-        <select id="location" onchange="setIframeSource()"> 
-          <option value="http://example.com/">선박선택</option> 
+            <p style="text-align:center;">
+          <label STYLE= "font-size: 40px;"> SELECT VESSEL</label></P>
+        <select id="location" onchange="setIframeSource()" STYLE= "font-size: 40px; width: 100%; TEXT-ALIGN:CENTER"> 
+          <option value="https://AWEGG0416.GITHUB.IO/VESSEL.jpg" selected>선박선택</option> 
           <option value="https://AWEGG0416.GITHUB.IO/V.DONJUAN.HTML">Don Juan</option> 
           <option value="https://www.americanas.com.br/">AMERICANAS</option> 
           <option value="https://www.bbc.com/">BBC</option> 
@@ -27,3 +29,5 @@
 
     </body>
 </html>
+
+
