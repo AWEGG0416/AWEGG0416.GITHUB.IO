@@ -1,0 +1,36 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=0.78">
+    <script>
+        function setIframeSource() {
+            // behavior of myIframe
+            var theSelect = document.getElementById('location');
+            var theIframe = document.getElementById('myIframe');
+            var theUrl;
+            theUrl = theSelect.options[theSelect.selectedIndex].value;
+            theIframe.src = theUrl;
+
+        }
+    </script>
+<STYLE>
+BODY{
+WIDTH:400PX;
+HEIGHT:100%
+}
+</STYLE>
+</head>
+<body>
+  
+<table border='0' width='436' height='200'>
+<tr><td><div id="ww_7244aac75740e" v='1.3' loc='id' a='{"t":"horizontal","lang":"ko","sl_lpl":1,"ids":["wl7429"],"font":"Arial","sl_ics":"one","sl_sot":"celsius","cl_bkg":"#FFFFFF","cl_font":"#000000","cl_cloud":"#d4d4d4","cl_persp":"#2196F3","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'>Weather for the Following Location: <a href="https://2ua.org/kor/gunsan/map/" id="ww_7244aac75740e_u" target="_blank">Gunsan map, South Korea</a></div><script async src="https://app1.weatherwidget.org/js/?id=ww_7244aac75740e"></script>
+ </td></tr>
+
+</table>  
+  
+ 
+  <iframe id="myIframe" src="httpS://i.badatime.com/view_day.jsp?idx=120" frameborder="0" marginwidth="0" marginheight="0" width=445 height=100%></iframe>
+
+  
+  
+</body>
+</html>
