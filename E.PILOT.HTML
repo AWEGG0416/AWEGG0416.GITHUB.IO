@@ -1,0 +1,36 @@
+<html>
+<head>
+        <meta name="viewport" content="width=device-width,initial-scale=0.78">
+    <script>
+        function setIframeSource() {
+            // behavior of myIframe
+            var theSelect = document.getElementById('location');
+            var theIframe = document.getElementById('myIframe');
+            var theUrl;
+            theUrl = theSelect.options[theSelect.selectedIndex].value;
+            theIframe.src = theUrl;
+
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" method="post">
+
+        <select id="location" onchange="setIframeSource()" STYLE= "font-size: 40px; width: 100%; TEXT-ALIGN:CENTER"> 
+ <option value="====">SELECT LOCATION</option>  
+          <option value="비공개">군산</option>
+          <option value="http://www.yspilot.co.kr/forecast">광양</option>
+          <option value=비공개">마산</option> 
+          <option value="비공개">목포</option>
+          <option value="http://www.ulsanpilot.co.kr/main/pilot_forecast.php">울산</option>
+          <option value="http://www.incheonpilot.com/pilot/pilot04.asp">인천</option> 
+          <option value="http://www.ptpilot.co.kr/main/pop_forecast">평택</option>
+          <option value="====">====</option>               
+
+      </select>
+    </form>
+    <iframe id="myIframe" src="https://search.pstatic.net/sunny/?src=https%3A%2F%2Fc.pxhere.com%2Fphotos%2F63%2F46%2Fboat_ship_pilot_nautical_vessel_sea_ocean_harbor-623748.jpg%21d&type=sc960_832" frameborder="0" marginwidth="0" marginheight="0" width=100% height=100%></iframe>
+
+
+    </body>
+</html>
