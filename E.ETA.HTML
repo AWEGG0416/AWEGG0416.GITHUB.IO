@@ -1,0 +1,35 @@
+<html>
+<head>
+        <meta name="viewport" content="width=device-width,initial-scale=0.78">
+    <script>
+        function setIframeSource() {
+            // behavior of myIframe
+            var theSelect = document.getElementById('location');
+            var theIframe = document.getElementById('myIframe');
+            var theUrl;
+            theUrl = theSelect.options[theSelect.selectedIndex].value;
+            theIframe.src = theUrl;
+
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" method="post">
+
+        <select id="location" onchange="setIframeSource()" STYLE= "font-size: 40px; width: 100%; TEXT-ALIGN:CENTER"> 
+ <option value="https://www.northriverboats.com/wp-content/uploads/2021/02/NRB_BoatProfile_Pilot.jpg">SELECT LOCATION</option>  
+          <option value="https://AWEGG0416.GITHUB.IO/E.ETA.KUNSAN.HTML">군산</option>
+          <option value="https://AWEGG0416.GITHUB.IO/E.ETA.KWANGYANG.HTML">광양</option>
+          <option value="https://AWEGG0416.GITHUB.IO/E.ETA.MASAN.HTML">마산</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/E.ETA.MOKPO.HTML">목포</option>
+          <option value="https://AWEGG0416.GITHUB.IO/E.ETA.ULSAN.HTML">울산</option>
+          <option value="https://AWEGG0416.GITHUB.IO/E.ETA.PYUNGTAEK.HTML">인천</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/E.ETA.PYUNGTAEK.HTML">평택</option>            
+
+      </select>
+    </form>
+                            
+    <iframe id="myIframe" src="https://search.pstatic.net/sunny/?src=https%3A%2F%2Fimage.ohou.se%2Fi%2Fbucketplace-v2-development%2Fuploads%2Fproductions%2F165095465125019491.jpg%3Fgif%3D1%26w%3D720%26h%3D480%26c%3Dc&type=a340" frameborder="0" marginwidth="0" marginheight="0" width=100% height=100%></iframe>
+
+    </body>
+</html>
