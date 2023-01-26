@@ -26,7 +26,7 @@ month = date.getMonth() + 1;
 day = date.getDate();
 document.getElementById("current_date").innerHTML = year + "-" + month + "-" + day;
 </script>  
-  <input type="number" id="a" size="8" style="WIDTH: 100pt; HEIGHT: 40pt; font-size: 25px;">시
+  <input type="number" id="a" size="8" style="WIDTH: 100pt; HEIGHT: 40pt; text-align: center; font-size: 25px;">시
 
   </td>
 </tr>
@@ -38,7 +38,7 @@ document.getElementById("current_date").innerHTML = year + "-" + month + "-" + d
 
 2. 예상되는 이동 속도를 입력 해주세요 <br>
   <p style="text-align: center;" data-ke-size="size16">
-<input type="number" id="b" size="8" style="WIDTH: 100pt; HEIGHT: 40pt; font-size: 25px;">(Kt)
+<input type="number" id="b" size="8" style="WIDTH: 100pt; HEIGHT: 40pt; text-align: center; font-size: 25px;">(Kt)
 <br> 
 </p>
 3. Berth to P/S은 3시간으로 고려 되었습니다.
@@ -64,7 +64,7 @@ document.getElementById("current_date").innerHTML = year + "-" + month + "-" + d
 </tr>
 <tr style="height: 20px;">
 <td style="width: 25%; height: 20px; text-align: center;"><b>군산</b></td>
-<td style="width: 25%; height: 20px; text-align: center;">124</td>
+<td style="width: 25%; height: 20px; text-align: center;">138</td>
 <td style="width: 50%; height: 20px; text-align: center;">
 <div id="current_date2"></p></div>    
   
@@ -85,8 +85,8 @@ document.getElementById("current_date").innerHTML = year + "-" + month + "-" + d
 </td>
 </tr>
 <tr style="height: 20px;">
-<td style="width: 25%; height: 20px; text-align: center;"><b>부산</b></td>
-<td style="width: 25%; height: 20px; text-align: center;">234</td>
+<td style="width: 25%; height: 20px; text-align: center;"><b>인천</b></td>
+<td style="width: 25%; height: 20px; text-align: center;">260</td>
 <td style="width: 50%; height: 20px; text-align: center;">
   <div id="current_date5"></p></div>  
 </td>
@@ -122,10 +122,10 @@ function setValue() {
 	b = parseInt(document.getElementById('b').value);
     c = parseInt("3"); 
 	m_1 = parseInt("260");
-	m_2 = parseInt("124");
+	m_2 = parseInt("138");
 	m_3 = parseInt("170");
 	m_4 = parseInt("250");
-	m_5 = parseInt("234");
+	m_5 = parseInt("260");
 	m_6 = parseInt("262");
 }
 function div() {	setValue();
