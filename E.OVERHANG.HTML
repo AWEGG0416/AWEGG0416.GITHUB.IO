@@ -89,15 +89,15 @@
 
  
 function setValue() {   
-    a = parseInt(document.getElementById('a').value);
-	b = parseInt(document.getElementById('b').value);
-	c = parseInt(document.getElementById('c').value);
+    a = parseFloat(document.getElementById('a').value);
+	b = parseFloat(document.getElementById('b').value);
+	c = parseFloat(document.getElementById('c').value);
 }
 function div() {	setValue();
 
 
 document.getElementById("current_date1").innerHTML = Math.ceil(+Math.sin(b * Math.PI/180) * a * 100)/100;
-document.getElementById("current_date2").innerHTML = Math.ceil((+Math.sin(b * Math.PI/180) * a + c) * 100)/100;
+document.getElementById("current_date2").innerHTML = Math.ceil(+Math.sin(b * Math.PI/180) * a  * 100 )/100 + c;
 
 
 
