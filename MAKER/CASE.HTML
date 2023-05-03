@@ -1,0 +1,40 @@
+<html>
+<head>
+        <meta name="viewport" content="width=device-width,initial-scale=0.78">
+    <script>
+        function setIframeSource() {
+            // behavior of myIframe
+            var theSelect = document.getElementById('location');
+            var theIframe = document.getElementById('myIframe');
+            var theUrl;
+            theUrl = theSelect.options[theSelect.selectedIndex].value;
+            theIframe.src = theUrl;
+
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" method="post">
+
+        <select id="location" onchange="setIframeSource()" STYLE= "font-size: 40px; width: 100%; TEXT-ALIGN:CENTER"> 
+          <option value="">MODEL</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/CASE/1650L.HTML">1650L</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/CASE/2050M.HTML">2050M</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/CASE/CX75C.HTML">CX75C</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/CASE/CX80C.HTML">CX80C</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/CASE/CX140E.HTML">CX140E</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/CASE/CX145D.HTML">CX145D</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/CASE/CX160D.HTML">CX160D</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/CASE/CX220E.HTML">CX220E</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/CASE/CX245D.HTML">CX245D</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/CASE/CX350D.HTML">CX350D</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/CASE/CX365E.HTML">CX365E</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/CASE/CX490C-8.HTML">CX490C-8</option>
+
+            </select>
+    </form>
+    <iframe id="myIframe" src="https://AWEGG0416.GITHUB.IO/CARGO.jpg" frameborder="0" marginwidth="0" marginheight="0" width=100% height=80%></iframe>
+
+
+    </body>
+</html>

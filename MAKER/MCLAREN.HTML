@@ -1,0 +1,36 @@
+<html>
+<head>
+        <meta name="viewport" content="width=device-width,initial-scale=0.78">
+    <script>
+        function setIframeSource() {
+            // behavior of myIframe
+            var theSelect = document.getElementById('location');
+            var theIframe = document.getElementById('myIframe');
+            var theUrl;
+            theUrl = theSelect.options[theSelect.selectedIndex].value;
+            theIframe.src = theUrl;
+
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" method="post">
+
+        <select id="location" onchange="setIframeSource()" STYLE= "font-size: 40px; width: 100%; TEXT-ALIGN:CENTER"> 
+          <option value="">MODEL</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MCLAREN/540C.HTML">540C</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MCLAREN/570S.HTML">570S</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MCLAREN/600LT COUPE.HTML">600LT COUPE</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MCLAREN/720S COUPE.HTML">720S COUPE</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MCLAREN/GT.HTML">GT</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MCLAREN/P1.HTML">P1</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MCLAREN/SENNA.HTML">SENNA</option>
+
+
+            </select>
+    </form>
+    <iframe id="myIframe" src="https://AWEGG0416.GITHUB.IO/CARGO.jpg" frameborder="0" marginwidth="0" marginheight="0" width=100% height=80%></iframe>
+
+
+    </body>
+</html>

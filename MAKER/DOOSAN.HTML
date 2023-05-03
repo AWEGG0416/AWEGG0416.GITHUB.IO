@@ -1,0 +1,73 @@
+<html>
+<head>
+        <meta name="viewport" content="width=device-width,initial-scale=0.78">
+    <script>
+        function setIframeSource() {
+            // behavior of myIframe
+            var theSelect = document.getElementById('location');
+            var theIframe = document.getElementById('myIframe');
+            var theUrl;
+            theUrl = theSelect.options[theSelect.selectedIndex].value;
+            theIframe.src = theUrl;
+
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" method="post">
+
+        <select id="location" onchange="setIframeSource()" STYLE= "font-size: 40px; width: 100%; TEXT-ALIGN:CENTER"> 
+          <option value="">MODEL</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DOOSAN/D18S-5.HTML">D18S-5</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DOOSAN/D30S-5.HTML">D30S-5</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DOOSAN/D40SC-5.HTML">D40SC-5</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DOOSAN/D50SC-5.HTML">D50SC-5</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DOOSAN/D70S.HTML">D70S</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DOOSAN/D90S-9.HTML">D90S-9</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DOOSAN/D110S-5.HTML">D110S-5</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DOOSAN/D150.HTML">D150</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DOOSAN/D160S-5.HTML">D160S-5</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DOOSAN/DD100.HTML">DD100</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DOOSAN/DL200.HTML">DL200</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DOOSAN/DL250.HTML">DL250</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DOOSAN/DL300.HTML">DL300</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DOOSAN/DL320-7M.HTML">DL320-7M</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DOOSAN/DL420A.HTML">DL420A</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DOOSAN/DL500.HTML">DL500</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DOOSAN/DX27Z.HTML">DX27Z</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DOOSAN/DX35Z.HTML">DX35Z</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DOOSAN/DX55-5C.HTML">DX55-5C</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DOOSAN/DX80R.HTML">DX80R</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DOOSAN/DX89R.HTML">DX89R</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DOOSAN/DX140LC.HTML">DX140LC</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DOOSAN/DX180LC.HTML">DX180LC</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DOOSAN/DX190W.HTML">DX190W</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DOOSAN/DX200-3B.HTML">DX200-3B</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DOOSAN/DX220LCA-2.HTML">DX220LCA-2</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DOOSAN/DX225LCA.HTML">DX225LCA</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DOOSAN/DX300LCA.HTML">DX300LCA</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DOOSAN/DX300LL.HTML">DX300LL</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DOOSAN/DX360LCA-7M.HTML">DX360LCA-7M</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DOOSAN/DX420LCA.HTML">DX420LCA</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DOOSAN/DX480.HTML">DX480</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DOOSAN/DX530LCA-7M.HTML">DX530LCA-7M</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DOOSAN/M300V.HTML">M300V</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DOOSAN/M400V.HTML">M400V</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DOOSAN/M500V.HTML">M500V</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DOOSAN/S160W-V.HTML">S160W-V</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DOOSAN/S180W-V.HTML">S180W-V</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DOOSAN/S210W-V.HTML">S210W-V</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DOOSAN/S225LC-V.HTML">S225LC-V</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DOOSAN/S300LC-V.HTML">S300LC-V</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DOOSAN/S470LC-V.HTML">S470LC-V</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DOOSAN/SD200.HTML">SD200</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DOOSAN/SD300.HTML">SD300</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DOOSAN/SD380.HTML">SD380</option>
+
+            </select>
+    </form>
+    <iframe id="myIframe" src="https://AWEGG0416.GITHUB.IO/CARGO.jpg" frameborder="0" marginwidth="0" marginheight="0" width=100% height=80%></iframe>
+
+
+    </body>
+</html>

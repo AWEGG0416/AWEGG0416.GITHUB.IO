@@ -1,0 +1,47 @@
+<html>
+<head>
+        <meta name="viewport" content="width=device-width,initial-scale=0.78">
+    <script>
+        function setIframeSource() {
+            // behavior of myIframe
+            var theSelect = document.getElementById('location');
+            var theIframe = document.getElementById('myIframe');
+            var theUrl;
+            theUrl = theSelect.options[theSelect.selectedIndex].value;
+            theIframe.src = theUrl;
+
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" method="post">
+
+        <select id="location" onchange="setIframeSource()" STYLE= "font-size: 40px; width: 100%; TEXT-ALIGN:CENTER"> 
+          <option value="">MODEL</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TEREX/595.HTML">595</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TEREX/683.HTML">683</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TEREX/693+.HTML">693+</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TEREX/883+.HTML">883+</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TEREX/3311E.HTML">3311E</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TEREX/AC60.HTML">AC60</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TEREX/C1540P.HTML">C1540P</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TEREX/I-120RS.HTML">I-120RS</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TEREX/J1175.HTML">J1175</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TEREX/TA25.HTML">TA25</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TEREX/TA30.HTML">TA30</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TEREX/TA35.HTML">TA35</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TEREX/TA40.HTML">TA40</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TEREX/TFC45.HTML">TFC45</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TEREX/TR35.HTML">TR35</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TEREX/TR60.HTML">TR60</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TEREX/TR100.HTML">TR100</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TEREX/TRAKPACTOR260.HTML">TRAKPACTOR260</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TEREX/TS14G.HTML">TS14G</option>
+
+            </select>
+    </form>
+    <iframe id="myIframe" src="https://AWEGG0416.GITHUB.IO/CARGO.jpg" frameborder="0" marginwidth="0" marginheight="0" width=100% height=80%></iframe>
+
+
+    </body>
+</html>

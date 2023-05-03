@@ -1,0 +1,40 @@
+<html>
+<head>
+        <meta name="viewport" content="width=device-width,initial-scale=0.78">
+    <script>
+        function setIframeSource() {
+            // behavior of myIframe
+            var theSelect = document.getElementById('location');
+            var theIframe = document.getElementById('myIframe');
+            var theUrl;
+            theUrl = theSelect.options[theSelect.selectedIndex].value;
+            theIframe.src = theUrl;
+
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" method="post">
+
+        <select id="location" onchange="setIframeSource()" STYLE= "font-size: 40px; width: 100%; TEXT-ALIGN:CENTER"> 
+          <option value="">MODEL</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SAIC/MAXUS EV30.HTML">MAXUS EV30</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SAIC/MAXUS EV90.HTML">MAXUS EV90</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SAIC/MAXUS MIFA9.HTML">MAXUS MIFA9</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SAIC/MAXUS SV63.HTML">MAXUS SV63</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SAIC/MG HS1.5.HTML">MG HS1.5</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SAIC/MG MARVEL R.HTML">MG MARVEL R</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SAIC/MG RX5.HTML">MG RX5</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SAIC/MG RX8.HTML">MG RX8</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SAIC/MG ZS1.5.HTML">MG ZS1.5</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SAIC/MG3.HTML">MG3</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SAIC/MG5.HTML">MG5</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SAIC/VW ID.4.HTML">VW ID.4</option>
+
+            </select>
+    </form>
+    <iframe id="myIframe" src="https://AWEGG0416.GITHUB.IO/CARGO.jpg" frameborder="0" marginwidth="0" marginheight="0" width=100% height=80%></iframe>
+
+
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<html>
+<head>
+        <meta name="viewport" content="width=device-width,initial-scale=0.78">
+    <script>
+        function setIframeSource() {
+            // behavior of myIframe
+            var theSelect = document.getElementById('location');
+            var theIframe = document.getElementById('myIframe');
+            var theUrl;
+            theUrl = theSelect.options[theSelect.selectedIndex].value;
+            theIframe.src = theUrl;
+
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" method="post">
+
+        <select id="location" onchange="setIframeSource()" STYLE= "font-size: 40px; width: 100%; TEXT-ALIGN:CENTER"> 
+          <option value="">MODEL</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/POWER SCREEN/CHIEFTAIN 1400.HTML">CHIEFTAIN 1400</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/POWER SCREEN/CHIEFTAIN 1700.HTML">CHIEFTAIN 1700</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/POWER SCREEN/CHIEFTAIN 2100.HTML">CHIEFTAIN 2100</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/POWER SCREEN/PREMIERTRAK 400X.HTML">PREMIERTRAK 400X</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/POWER SCREEN/TRAKPACTOR 320.HTML">TRAKPACTOR 320</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/POWER SCREEN/TRAKPACTOR 550.HTML">TRAKPACTOR 550</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/POWER SCREEN/TROMMEL 830.HTML">TROMMEL 830</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/POWER SCREEN/WARRIOR 1800.HTML">WARRIOR 1800</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/POWER SCREEN/ WARRIOR 2400.HTML">WARRIOR 2400</option>
+
+            </select>
+    </form>
+    <iframe id="myIframe" src="https://AWEGG0416.GITHUB.IO/CARGO.jpg" frameborder="0" marginwidth="0" marginheight="0" width=100% height=80%></iframe>
+
+
+    </body>
+</html>

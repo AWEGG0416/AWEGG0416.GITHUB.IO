@@ -1,0 +1,49 @@
+<html>
+<head>
+        <meta name="viewport" content="width=device-width,initial-scale=0.78">
+    <script>
+        function setIframeSource() {
+            // behavior of myIframe
+            var theSelect = document.getElementById('location');
+            var theIframe = document.getElementById('myIframe');
+            var theUrl;
+            theUrl = theSelect.options[theSelect.selectedIndex].value;
+            theIframe.src = theUrl;
+
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" method="post">
+
+        <select id="location" onchange="setIframeSource()" STYLE= "font-size: 40px; width: 100%; TEXT-ALIGN:CENTER"> 
+          <option value="">MODEL</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/ISUZU/600P.HTML">600P</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/ISUZU/CYZ51L.HTML">CYZ51L</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/ISUZU/FRR-2-S-03.HTML">FRR-2-S-03</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/ISUZU/FRR90L.HTML">FRR90L</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/ISUZU/FSR33L.HTML">FSR33L</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/ISUZU/FTR34P.HTML">FTR34P</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/ISUZU/FVR34K.HTML">FVR34K</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/ISUZU/FVR34Q.HTML">FVR34Q</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/ISUZU/FVR34UL-QDUES.HTML">FVR34UL-QDUES</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/ISUZU/FVZ34P.HTML">FVZ34P</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/ISUZU/FVZ34T.HTML">FVZ34T</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/ISUZU/MT134S.HTML">MT134S</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/ISUZU/NKR66E2L.HTML">NKR66E2L</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/ISUZU/NLR55E.HTML">NLR55E</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/ISUZU/NLR85L.HTML">NLR85L</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/ISUZU/NMR85H.HTML">NMR85H</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/ISUZU/NPR71K-22.HTML">NPR71K-22</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/ISUZU/NPR75H.HTML">NPR75H</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/ISUZU/NQR75L.HTML">NQR75L</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/ISUZU/QKR55L-EE1AY.HTML">QKR55L-EE1AY</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/ISUZU/QKR55L-HH5AY.HTML">QKR55L-HH5AY</option>
+
+            </select>
+    </form>
+    <iframe id="myIframe" src="https://AWEGG0416.GITHUB.IO/CARGO.jpg" frameborder="0" marginwidth="0" marginheight="0" width=100% height=80%></iframe>
+
+
+    </body>
+</html>

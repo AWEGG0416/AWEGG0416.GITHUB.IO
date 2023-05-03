@@ -1,0 +1,42 @@
+<html>
+<head>
+        <meta name="viewport" content="width=device-width,initial-scale=0.78">
+    <script>
+        function setIframeSource() {
+            // behavior of myIframe
+            var theSelect = document.getElementById('location');
+            var theIframe = document.getElementById('myIframe');
+            var theUrl;
+            theUrl = theSelect.options[theSelect.selectedIndex].value;
+            theIframe.src = theUrl;
+
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" method="post">
+
+        <select id="location" onchange="setIframeSource()" STYLE= "font-size: 40px; width: 100%; TEXT-ALIGN:CENTER"> 
+          <option value="">MODEL</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SANY/BHL75.HTML">BHL75</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SANY/SCC300TB.HTML">SCC300TB</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SANY/SKT105S.HTML">SKT105S</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SANY/SR125C10.HTML">SR125C10</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SANY/SRC65OT.HTML">SRC65OT</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SANY/SRC1100T.HTML">SRC1100T</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SANY/STH1056A.HTML">STH1056A</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SANY/SW966K1.HTML">SW966K1</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SANY/SY75C.HTML">SY75C</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SANY/SY135C.HTML">SY135C</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SANY/SY215H.HTML">SY215H</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SANY/SY330H.HTML">SY330H</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SANY/SY365H.HTML">SY365H</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SANY/SY500H.HTML">SY500H</option>
+
+            </select>
+    </form>
+    <iframe id="myIframe" src="https://AWEGG0416.GITHUB.IO/CARGO.jpg" frameborder="0" marginwidth="0" marginheight="0" width=100% height=80%></iframe>
+
+
+    </body>
+</html>

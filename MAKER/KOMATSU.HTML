@@ -1,0 +1,62 @@
+<html>
+<head>
+        <meta name="viewport" content="width=device-width,initial-scale=0.78">
+    <script>
+        function setIframeSource() {
+            // behavior of myIframe
+            var theSelect = document.getElementById('location');
+            var theIframe = document.getElementById('myIframe');
+            var theUrl;
+            theUrl = theSelect.options[theSelect.selectedIndex].value;
+            theIframe.src = theUrl;
+
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" method="post">
+
+        <select id="location" onchange="setIframeSource()" STYLE= "font-size: 40px; width: 100%; TEXT-ALIGN:CENTER"> 
+          <option value="">MODEL</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/KOMATSU/D37PX-24.HTML">D37PX-24</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/KOMATSU/D39PX-24.HTML">D39PX-24</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/KOMATSU/D51EXI-24.HTML">D51EXI-24</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/KOMATSU/D61EX-24.HTML">D61EX-24</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/KOMATSU/D61PXI-24.HTML">D61PXI-24</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/KOMATSU/D65EX-16.HTML">D65EX-16</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/KOMATSU/D65WX-18DOZER.HTML">D65WX-18DOZER</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/KOMATSU/D71PX-24.HTML">D71PX-24</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/KOMATSU/D85EX-15E0.HTML">D85EX-15E0</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/KOMATSU/D155AX-8.HTML">D155AX-8</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/KOMATSU/GD655.HTML">GD655</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/KOMATSU/GD825.HTML">GD825</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/KOMATSU/HD605-8.HTML">HD605-8</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/KOMATSU/HM300-5.HTML">HM300-5</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/KOMATSU/HM400-5.HTML">HM400-5</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/KOMATSU/PC30MR-5.HTML">PC30MR-5</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/KOMATSU/PC35MR-5.HTML">PC35MR-5</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/KOMATSU/PC45MR-5.HTML">PC45MR-5</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/KOMATSU/PC55MR-5.HTML">PC55MR-5</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/KOMATSU/PC88MR-11.HTML">PC88MR-11</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/KOMATSU/PC130-11W.HTML">PC130-11W</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/KOMATSU/PC138USLC-11.HTML">PC138USLC-11</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/KOMATSU/PC170LC-11.HTML">PC170LC-11</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/KOMATSU/PC210LC-11.HTML">PC210LC-11</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/KOMATSU/PC238USLC-11.HTML">PC238USLC-11</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/KOMATSU/PC300.HTML">PC300</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/KOMATSU/PC350.HTML">PC350</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/KOMATSU/PC800.HTML">PC800</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/KOMATSU/WA200-8.HTML">WA200-8</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/KOMATSU/WA250-6.HTML">WA250-6</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/KOMATSU/WA270-8.HTML">WA270-8</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/KOMATSU/WA380-6.HTML">WA380-6</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/KOMATSU/WA470-6.HTML">WA470-6</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/KOMATSU/WA600-8.HTML">WA600-8</option>
+
+            </select>
+    </form>
+    <iframe id="myIframe" src="https://AWEGG0416.GITHUB.IO/CARGO.jpg" frameborder="0" marginwidth="0" marginheight="0" width=100% height=80%></iframe>
+
+
+    </body>
+</html>

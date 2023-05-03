@@ -1,0 +1,50 @@
+<html>
+<head>
+        <meta name="viewport" content="width=device-width,initial-scale=0.78">
+    <script>
+        function setIframeSource() {
+            // behavior of myIframe
+            var theSelect = document.getElementById('location');
+            var theIframe = document.getElementById('myIframe');
+            var theUrl;
+            theUrl = theSelect.options[theSelect.selectedIndex].value;
+            theIframe.src = theUrl;
+
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" method="post">
+
+        <select id="location" onchange="setIframeSource()" STYLE= "font-size: 40px; width: 100%; TEXT-ALIGN:CENTER"> 
+          <option value="">MODEL</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/HITACHI/AH400.HTML">AH400</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/HITACHI/CG70.HTML">CG70</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/HITACHI/EX125WD.HTML">EX125WD</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/HITACHI/EX135.HTML">EX135</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/HITACHI/EX200.HTML">EX200</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/HITACHI/LX130.HTML">LX130</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/HITACHI/ZW80-5B.HTML">ZW80-5B</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/HITACHI/ZW150-6.HTML">ZW150-6</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/HITACHI/ZW180-6.HTML">ZW180-6</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/HITACHI/ZW220-6.HTML">ZW220-6</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/HITACHI/ZW310-6.HTML">ZW310-6</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/HITACHI/ZX17U-5N.HTML">ZX17U-5N</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/HITACHI/ZX26U-5N.HTML">ZX26U-5N</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/HITACHI/ZX35U-5N.HTML">ZX35U-5N</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/HITACHI/ZX50U-5N.HTML">ZX50U-5N</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/HITACHI/ZX60USB-5N.HTML">ZX60USB-5N</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/HITACHI/ZX75US-5N.HTML">ZX75US-5N</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/HITACHI/ZX160LC-6.HTML">ZX160LC-6</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/HITACHI/ZX245USLC-6.HTML">ZX245USLC-6</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/HITACHI/ZX350LC-6.HTML">ZX350LC-6</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/HITACHI/ZX450.HTML">ZX450</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/HITACHI/ZX470.HTML">ZX470</option>
+
+            </select>
+    </form>
+    <iframe id="myIframe" src="https://AWEGG0416.GITHUB.IO/CARGO.jpg" frameborder="0" marginwidth="0" marginheight="0" width=100% height=80%></iframe>
+
+
+    </body>
+</html>

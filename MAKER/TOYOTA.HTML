@@ -1,0 +1,62 @@
+<html>
+<head>
+        <meta name="viewport" content="width=device-width,initial-scale=0.78">
+    <script>
+        function setIframeSource() {
+            // behavior of myIframe
+            var theSelect = document.getElementById('location');
+            var theIframe = document.getElementById('myIframe');
+            var theUrl;
+            theUrl = theSelect.options[theSelect.selectedIndex].value;
+            theIframe.src = theUrl;
+
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" method="post">
+
+        <select id="location" onchange="setIframeSource()" STYLE= "font-size: 40px; width: 100%; TEXT-ALIGN:CENTER"> 
+          <option value="">MODEL</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TOYOTA/4RUNNER.HTML">4RUNNER</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TOYOTA/AVANZA.HTML">AVANZA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TOYOTA/AVENSIS.HTML">AVENSIS</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TOYOTA/AYGO.HTML">AYGO</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TOYOTA/BELTA.HTML">BELTA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TOYOTA/CAMRY.HTML">CAMRY</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TOYOTA/CARINA.HTML">CARINA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TOYOTA/C-HR.HTML">C-HR</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TOYOTA/COASTER 23 SEATER.HTML">COASTER 23 SEATER</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TOYOTA/COROLLA.HTML">COROLLA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TOYOTA/FORTUNER.HTML">FORTUNER</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TOYOTA/HIACE COMMUTER.HTML">HIACE COMMUTER</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TOYOTA/HIACE VAN.HTML">HIACE VAN</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TOYOTA/HIGH LANDER.HTML">HIGH LANDER</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TOYOTA/HILUX.HTML">HILUX</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TOYOTA/HZB50L.HTML">HZB50L</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TOYOTA/HZJ78L.HTML">HZJ78L</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TOYOTA/LAND CRUISER.HTML">LAND CRUISER</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TOYOTA/LEXUS IS.HTML">LEXUS IS</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TOYOTA/LEXUS LS.HTML">LEXUS LS</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TOYOTA/LEXUS RX.HTML">LEXUS RX</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TOYOTA/PICNIC.HTML">PICNIC</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TOYOTA/PRADO.HTML">PRADO</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TOYOTA/PRIUS.HTML">PRIUS</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TOYOTA/RAV4.HTML">RAV4</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TOYOTA/RUSH.HTML">RUSH</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TOYOTA/SEQUOIA.HTML">SEQUOIA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TOYOTA/SIENNA.HTML">SIENNA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TOYOTA/SUPRA.HTML">SUPRA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TOYOTA/TRUENO.HTML">TRUENO</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TOYOTA/TUNDRA.HTML">TUNDRA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TOYOTA/VERSO.HTML">VERSO</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TOYOTA/VISTA.HTML">VISTA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/TOYOTA/YARIS.HTML">YARIS</option>
+
+            </select>
+    </form>
+    <iframe id="myIframe" src="https://AWEGG0416.GITHUB.IO/CARGO.jpg" frameborder="0" marginwidth="0" marginheight="0" width=100% height=80%></iframe>
+
+
+    </body>
+</html>

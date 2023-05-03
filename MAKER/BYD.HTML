@@ -1,0 +1,41 @@
+<html>
+<head>
+        <meta name="viewport" content="width=device-width,initial-scale=0.78">
+    <script>
+        function setIframeSource() {
+            // behavior of myIframe
+            var theSelect = document.getElementById('location');
+            var theIframe = document.getElementById('myIframe');
+            var theUrl;
+            theUrl = theSelect.options[theSelect.selectedIndex].value;
+            theIframe.src = theUrl;
+
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" method="post">
+
+        <select id="location" onchange="setIframeSource()" STYLE= "font-size: 40px; width: 100%; TEXT-ALIGN:CENTER"> 
+          <option value="">MODEL</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BYD/D1.HTML">D1</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BYD/E5.HTML">E5</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BYD/ET7.HTML">ET7</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BYD/ET8.HTML">ET8</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BYD/F0.HTML">F0</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BYD/F3.HTML">F3</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BYD/F6.HTML">F6</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BYD/G3.HTML">G3</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BYD/G6.HTML">G6</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BYD/HAN EV.HTML">HAN EV</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BYD/S6.HTML">S6</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BYD/T3.HTML">T3</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BYD/TANG.HTML">TANG</option>
+
+            </select>
+    </form>
+    <iframe id="myIframe" src="https://AWEGG0416.GITHUB.IO/CARGO.jpg" frameborder="0" marginwidth="0" marginheight="0" width=100% height=80%></iframe>
+
+
+    </body>
+</html>

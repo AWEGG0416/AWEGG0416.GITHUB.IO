@@ -1,0 +1,40 @@
+<html>
+<head>
+        <meta name="viewport" content="width=device-width,initial-scale=0.78">
+    <script>
+        function setIframeSource() {
+            // behavior of myIframe
+            var theSelect = document.getElementById('location');
+            var theIframe = document.getElementById('myIframe');
+            var theUrl;
+            theUrl = theSelect.options[theSelect.selectedIndex].value;
+            theIframe.src = theUrl;
+
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" method="post">
+
+        <select id="location" onchange="setIframeSource()" STYLE= "font-size: 40px; width: 100%; TEXT-ALIGN:CENTER"> 
+          <option value="">MODEL</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/JOHN DEERE/JOHN DEERE(75G).HTML">75G</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/JOHN DEERE/JOHN DEERE(85G).HTML">85G</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/JOHN DEERE/JOHN DEERE(135G-FT4).HTML">135G-FT4</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/JOHN DEERE/JOHN DEERE(135P-FT4).HTML">135P-FT4</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/JOHN DEERE/JOHN DEERE(190G W-FT4).HTML">190G W-FT4</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/JOHN DEERE/JOHN DEERE(200GL).HTML">200GL</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/JOHN DEERE/JOHN DEERE(245P LC-FT4).HTML">245P LC-FT4</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/JOHN DEERE/JOHN DEERE(345P LC-FT4).HTML">345P LC-FT4</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/JOHN DEERE/JOHN DEERE(644K).HTML">644K</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/JOHN DEERE/JOHN DEERE(670G).HTML">670G</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/JOHN DEERE/JOHN DEERE(670P LC-FT4).HTML">670P LC-FT4</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/JOHN DEERE/JOHN DEERE(870P LC-FT4).HTML">870P LC-FT4</option>
+
+            </select>
+    </form>
+    <iframe id="myIframe" src="https://AWEGG0416.GITHUB.IO/CARGO.jpg" frameborder="0" marginwidth="0" marginheight="0" width=100% height=80%></iframe>
+
+
+    </body>
+</html>

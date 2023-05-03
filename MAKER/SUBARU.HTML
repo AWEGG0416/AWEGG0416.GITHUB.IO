@@ -1,0 +1,42 @@
+<html>
+<head>
+        <meta name="viewport" content="width=device-width,initial-scale=0.78">
+    <script>
+        function setIframeSource() {
+            // behavior of myIframe
+            var theSelect = document.getElementById('location');
+            var theIframe = document.getElementById('myIframe');
+            var theUrl;
+            theUrl = theSelect.options[theSelect.selectedIndex].value;
+            theIframe.src = theUrl;
+
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" method="post">
+
+        <select id="location" onchange="setIframeSource()" STYLE= "font-size: 40px; width: 100%; TEXT-ALIGN:CENTER"> 
+          <option value="">MODEL</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SUBARU/BRZ.HTML">BRZ</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SUBARU/CROSSTRECK.HTML">CROSSTRECK</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SUBARU/FORESTER SG5.HTML">FORESTER SG5</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SUBARU/FORESTER SG9.HTML">FORESTER SG9</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SUBARU/FORESTER SK9.HTML">FORESTER SK9</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SUBARU/FORESTER SKE.HTML">FORESTER SKE</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SUBARU/FORESTER.HTML">FORESTER</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SUBARU/IMPREZA GT7.HTML">IMPREZA GT7</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SUBARU/LEGACY.HTML">LEGACY</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SUBARU/OUTBACK BT9.HTML">OUTBACK BT9</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SUBARU/OUTBACK.HTML">OUTBACK</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SUBARU/TRIBECA.HTML">TRIBECA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SUBARU/WRX STI.HTML">WRX STI</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SUBARU/XV.HTML">XV</option>
+
+            </select>
+    </form>
+    <iframe id="myIframe" src="https://AWEGG0416.GITHUB.IO/CARGO.jpg" frameborder="0" marginwidth="0" marginheight="0" width=100% height=80%></iframe>
+
+
+    </body>
+</html>

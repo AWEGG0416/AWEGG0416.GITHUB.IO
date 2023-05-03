@@ -1,0 +1,41 @@
+<html>
+<head>
+        <meta name="viewport" content="width=device-width,initial-scale=0.78">
+    <script>
+        function setIframeSource() {
+            // behavior of myIframe
+            var theSelect = document.getElementById('location');
+            var theIframe = document.getElementById('myIframe');
+            var theUrl;
+            theUrl = theSelect.options[theSelect.selectedIndex].value;
+            theIframe.src = theUrl;
+
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" method="post">
+
+        <select id="location" onchange="setIframeSource()" STYLE= "font-size: 40px; width: 100%; TEXT-ALIGN:CENTER"> 
+          <option value="">MODEL</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/CITROEN/C1.HTML">C1</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/CITROEN/C3.HTML">C3</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/CITROEN/C3 AIR CROSS.HTML">C3 AIR CROSS</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/CITROEN/C4.HTML">C4</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/CITROEN/C5 AIR CROSS.HTML">C5 AIR CROSS</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/CITROEN/C-ELYSEE.HTML">C-ELYSEE</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/CITROEN/DS3 CROSSBACK.HTML">DS3 CROSSBACK</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/CITROEN/DS4.HTML">DS4</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/CITROEN/DS5.HTML">DS5</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/CITROEN/DS7 CROSSBACK.HTML">DS7 CROSSBACK</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/CITROEN/GRAND C4.HTML">GRAND C4</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/CITROEN/L1H1.HTML">L1H1</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/CITROEN/L2H1.HTML">L2H1</option>
+
+            </select>
+    </form>
+    <iframe id="myIframe" src="https://AWEGG0416.GITHUB.IO/CARGO.jpg" frameborder="0" marginwidth="0" marginheight="0" width=100% height=80%></iframe>
+
+
+    </body>
+</html>

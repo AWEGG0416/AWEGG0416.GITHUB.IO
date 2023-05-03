@@ -1,0 +1,39 @@
+<html>
+<head>
+        <meta name="viewport" content="width=device-width,initial-scale=0.78">
+    <script>
+        function setIframeSource() {
+            // behavior of myIframe
+            var theSelect = document.getElementById('location');
+            var theIframe = document.getElementById('myIframe');
+            var theUrl;
+            theUrl = theSelect.options[theSelect.selectedIndex].value;
+            theIframe.src = theUrl;
+
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" method="post">
+
+        <select id="location" onchange="setIframeSource()" STYLE= "font-size: 40px; width: 100%; TEXT-ALIGN:CENTER"> 
+          <option value="">MODEL</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SEAT/ALHAMBRA.HTML">ALHAMBRA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SEAT/ALTEA XL.HTML">ALTEA XL</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SEAT/ARONA.HTML">ARONA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SEAT/ATECA.HTML">ATECA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SEAT/CORDOBA.HTML">CORDOBA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SEAT/FORMENTOR.HTML">FORMENTOR</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SEAT/IBIZA.HTML">IBIZA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SEAT/LEON.HTML">LEON</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SEAT/MII.HTML">MII</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SEAT/TARRACO.HTML">TARRACO</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SEAT/TOLEDO.HTML">TOLEDO</option>
+
+            </select>
+    </form>
+    <iframe id="myIframe" src="https://AWEGG0416.GITHUB.IO/CARGO.jpg" frameborder="0" marginwidth="0" marginheight="0" width=100% height=80%></iframe>
+
+
+    </body>
+</html>

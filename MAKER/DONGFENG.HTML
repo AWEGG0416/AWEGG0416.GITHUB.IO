@@ -1,0 +1,39 @@
+<html>
+<head>
+        <meta name="viewport" content="width=device-width,initial-scale=0.78">
+    <script>
+        function setIframeSource() {
+            // behavior of myIframe
+            var theSelect = document.getElementById('location');
+            var theIframe = document.getElementById('myIframe');
+            var theUrl;
+            theUrl = theSelect.options[theSelect.selectedIndex].value;
+            theIframe.src = theUrl;
+
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" method="post">
+
+        <select id="location" onchange="setIframeSource()" STYLE= "font-size: 40px; width: 100%; TEXT-ALIGN:CENTER"> 
+          <option value="">MODEL</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DONGFENG/DONGFENG(180WT).HTML">180WT</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DONGFENG/DONGFENG(190).HTML">190</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DONGFENG/DONGFENG(C31).HTML">C31</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DONGFENG/DONGFENG(C32).HTML">C32</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DONGFENG/DONGFENG(C35).HTML">C35</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DONGFENG/DONGFENG(DFL250A13).HTML">DFL250A13</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DONGFENG/DONGFENG(DFL3251A1).HTML">DFL3251A1</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DONGFENG/DONGFENG(DXK1021NK9).HTML">DXK1021NK9</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DONGFENG/DONGFENG(EQ1180).HTML">EQ1180</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DONGFENG/DONGFENG(EQ5025XXYF20).HTML">EQ5025XXYF20</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/DONGFENG/DONGFENG(K01H).HTML">K01H</option>
+
+            </select>
+    </form>
+    <iframe id="myIframe" src="https://AWEGG0416.GITHUB.IO/CARGO.jpg" frameborder="0" marginwidth="0" marginheight="0" width=100% height=80%></iframe>
+
+
+    </body>
+</html>

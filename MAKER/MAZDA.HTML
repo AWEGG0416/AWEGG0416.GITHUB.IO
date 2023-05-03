@@ -1,0 +1,50 @@
+<html>
+<head>
+        <meta name="viewport" content="width=device-width,initial-scale=0.78">
+    <script>
+        function setIframeSource() {
+            // behavior of myIframe
+            var theSelect = document.getElementById('location');
+            var theIframe = document.getElementById('myIframe');
+            var theUrl;
+            theUrl = theSelect.options[theSelect.selectedIndex].value;
+            theIframe.src = theUrl;
+
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" method="post">
+
+        <select id="location" onchange="setIframeSource()" STYLE= "font-size: 40px; width: 100%; TEXT-ALIGN:CENTER"> 
+          <option value="">MODEL</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MAZDA/323 SEDAN.HTML">323 SEDAN</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MAZDA/BONGO.HTML">BONGO</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MAZDA/BT50.HTML">BT50</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MAZDA/CAPELLA.HTML">CAPELLA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MAZDA/CX3.HTML">CX3</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MAZDA/CX5.HTML">CX5</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MAZDA/CX7.HTML">CX7</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MAZDA/CX9.HTML">CX9</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MAZDA/CX30.HTML">CX30</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MAZDA/CX60.HTML">CX60</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MAZDA/FAMILIA.HTML">FAMILIA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MAZDA/MAZDA2.HTML">MAZDA2</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MAZDA/MAZDA3.HTML">MAZDA3</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MAZDA/MAZDA5.HTML">MAZDA5</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MAZDA/MAZDA6.HTML">MAZDA6</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MAZDA/MIATA.HTML">MIATA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MAZDA/MILLENIA.HTML">MILLENIA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MAZDA/MPV.HTML">MPV</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MAZDA/MX5.HTML">MX5</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MAZDA/PROCEED.HTML">PROCEED</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MAZDA/PROTEGE.HTML">PROTEGE</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MAZDA/RX8.HTML">RX8</option>
+
+            </select>
+    </form>
+    <iframe id="myIframe" src="https://AWEGG0416.GITHUB.IO/CARGO.jpg" frameborder="0" marginwidth="0" marginheight="0" width=100% height=80%></iframe>
+
+
+    </body>
+</html>

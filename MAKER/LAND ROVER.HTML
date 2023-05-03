@@ -1,0 +1,37 @@
+<html>
+<head>
+        <meta name="viewport" content="width=device-width,initial-scale=0.78">
+    <script>
+        function setIframeSource() {
+            // behavior of myIframe
+            var theSelect = document.getElementById('location');
+            var theIframe = document.getElementById('myIframe');
+            var theUrl;
+            theUrl = theSelect.options[theSelect.selectedIndex].value;
+            theIframe.src = theUrl;
+
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" method="post">
+
+        <select id="location" onchange="setIframeSource()" STYLE= "font-size: 40px; width: 100%; TEXT-ALIGN:CENTER"> 
+          <option value="">MODEL</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/LAND ROVER/DEFENDER 90.HTML">DEFENDER 90</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/LAND ROVER/DEFENDER 110.HTML">DEFENDER 110</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/LAND ROVER/DEFENDER 130.HTML">DEFENDER 130</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/LAND ROVER/DISCOVERY L462.HTML">DISCOVERY L462</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/LAND ROVER/DISCOVERY L550.HTML">DISCOVERY L550</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/LAND ROVER/RANGE ROVER EVOQUE L551.HTML">RANGE ROVER EVOQUE L551</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/LAND ROVER/RANGE ROVER L460.HTML">RANGE ROVER L460</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/LAND ROVER/RANGE ROVER L461.HTML">RANGE ROVER L461</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/LAND ROVER/RANGE ROVER VELAR L560.HTML">RANGE ROVER VELAR L560</option>
+
+            </select>
+    </form>
+    <iframe id="myIframe" src="https://AWEGG0416.GITHUB.IO/CARGO.jpg" frameborder="0" marginwidth="0" marginheight="0" width=100% height=80%></iframe>
+
+
+    </body>
+</html>

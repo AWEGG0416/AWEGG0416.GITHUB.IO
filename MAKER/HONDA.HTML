@@ -1,0 +1,40 @@
+<html>
+<head>
+        <meta name="viewport" content="width=device-width,initial-scale=0.78">
+    <script>
+        function setIframeSource() {
+            // behavior of myIframe
+            var theSelect = document.getElementById('location');
+            var theIframe = document.getElementById('myIframe');
+            var theUrl;
+            theUrl = theSelect.options[theSelect.selectedIndex].value;
+            theIframe.src = theUrl;
+
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" method="post">
+
+        <select id="location" onchange="setIframeSource()" STYLE= "font-size: 40px; width: 100%; TEXT-ALIGN:CENTER"> 
+          <option value="">MODEL</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/HONDA/ACCORD.HTML">ACCORD</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/HONDA/ACURA TL.HTML">ACURA TL</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/HONDA/BR-V.HTML">BR-V</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/HONDA/CITY.HTML">CITY</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/HONDA/CIVIC.HTML">CIVIC</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/HONDA/CR-V.HTML">CR-V</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/HONDA/HR-V.HTML">HR-V</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/HONDA/JAZZ.HTML">JAZZ</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/HONDA/ODYSSEY.HTML">ODYSSEY</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/HONDA/PILOT.HTML">PILOT</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/HONDA/STREAM.HTML">STREAM</option>
+
+
+            </select>
+    </form>
+    <iframe id="myIframe" src="https://AWEGG0416.GITHUB.IO/CARGO.jpg" frameborder="0" marginwidth="0" marginheight="0" width=100% height=80%></iframe>
+
+
+    </body>
+</html>

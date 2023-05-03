@@ -1,0 +1,74 @@
+<html>
+<head>
+        <meta name="viewport" content="width=device-width,initial-scale=0.78">
+    <script>
+        function setIframeSource() {
+            // behavior of myIframe
+            var theSelect = document.getElementById('location');
+            var theIframe = document.getElementById('myIframe');
+            var theUrl;
+            theUrl = theSelect.options[theSelect.selectedIndex].value;
+            theIframe.src = theUrl;
+
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" method="post">
+
+        <select id="location" onchange="setIframeSource()" STYLE= "font-size: 40px; width: 100%; TEXT-ALIGN:CENTER"> 
+          <option value="">MODEL</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/NISSAN/350Z.HTML">350Z</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/NISSAN/370Z.HTML">370Z</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/NISSAN/ALMERA.HTML">ALMERA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/NISSAN/ALTIMA.HTML">ALTIMA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/NISSAN/ARMADA.HTML">ARMADA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/NISSAN/CABSTAR.HTML">CABSTAR</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/NISSAN/CIMA.HTML">CIMA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/NISSAN/CIVILIAN.HTML">CIVILIAN</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/NISSAN/CUBE.HTML">CUBE</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/NISSAN/E NV200.HTML">E NV200</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/NISSAN/FIGARO.HTML">FIGARO</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/NISSAN/FUGA.HTML">FUGA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/NISSAN/GTR.HTML">GTR</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/NISSAN/HARDBODY.HTML">HARDBODY</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/NISSAN/INFINITI EX.HTML">INFINITI EX</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/NISSAN/INFINITI FX.HTML">INFINITI FX</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/NISSAN/INFINITI JX.HTML">INFINITI JX</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/NISSAN/INFINITI M.HTML">INFINITI M</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/NISSAN/INFINITI Q.HTML">INFINITI Q</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/NISSAN/JUKE.HTML">JUKE</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/NISSAN/KICKS.HTML">KICKS</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/NISSAN/LEAF.HTML">LEAF</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/NISSAN/MARCH.HTML">MARCH</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/NISSAN/MAXIMA.HTML">MAXIMA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/NISSAN/MICRA.HTML">MICRA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/NISSAN/MURANO.HTML">MURANO</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/NISSAN/NAVARA.HTML">NAVARA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/NISSAN/NV200.HTML">NV200</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/NISSAN/PATHFINDER.HTML">PATHFINDER</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/NISSAN/PATROL.HTML">PATROL</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/NISSAN/QASHQAI.HTML">QASHQAI</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/NISSAN/QUEST.HTML">QUEST</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/NISSAN/ROGUE.HTML">ROGUE</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/NISSAN/SENTRA.HTML">SENTRA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/NISSAN/SKYLINE SEDAN.HTML">SKYLINE SEDAN</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/NISSAN/SYLPHY.HTML">SYLPHY</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/NISSAN/TERRANO.HTML">TERRANO</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/NISSAN/TIIDA.HTML">TIIDA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/NISSAN/TITAN.HTML">TITAN</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/NISSAN/URVAN.HTML">URVAN</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/NISSAN/VERSA.HTML">VERSA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/NISSAN/WINGROAD.HTML">WINGROAD</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/NISSAN/XTRAIL.HTML">XTRAIL</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/NISSAN/Y62.HTML">Y62</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/NISSAN/ZNA RICH.HTML">ZNA RICH</option>
+
+
+            </select>
+    </form>
+    <iframe id="myIframe" src="https://AWEGG0416.GITHUB.IO/CARGO.jpg" frameborder="0" marginwidth="0" marginheight="0" width=100% height=80%></iframe>
+
+
+    </body>
+</html>

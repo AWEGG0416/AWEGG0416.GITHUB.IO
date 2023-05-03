@@ -1,0 +1,43 @@
+<html>
+<head>
+        <meta name="viewport" content="width=device-width,initial-scale=0.78">
+    <script>
+        function setIframeSource() {
+            // behavior of myIframe
+            var theSelect = document.getElementById('location');
+            var theIframe = document.getElementById('myIframe');
+            var theUrl;
+            theUrl = theSelect.options[theSelect.selectedIndex].value;
+            theIframe.src = theUrl;
+
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" method="post">
+
+        <select id="location" onchange="setIframeSource()" STYLE= "font-size: 40px; width: 100%; TEXT-ALIGN:CENTER"> 
+          <option value="">MODEL</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/VOLVO/940GLE.HTML">940GLE</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/VOLVO/C40.HTML">C40</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/VOLVO/POLSTER2.HTML">POLSTER2</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/VOLVO/S60.HTML">S60</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/VOLVO/S90 LONG.HTML">S90 LONG</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/VOLVO/V40 CROSS COUNTRY.HTML">V40 CROSS COUNTRY</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/VOLVO/V40.HTML">V40</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/VOLVO/V60 CROSS COUNTRY.HTML">V60 CROSS COUNTRY</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/VOLVO/V60.HTML">V60</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/VOLVO/V90 CROSS COUNTRY.HTML">V90 CROSS COUNTRY</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/VOLVO/V90.HTML">V90</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/VOLVO/XC40.HTML">XC40</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/VOLVO/XC60.HTML">XC60</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/VOLVO/XC90.HTML">XC90</option>
+
+
+            </select>
+    </form>
+    <iframe id="myIframe" src="https://AWEGG0416.GITHUB.IO/CARGO.jpg" frameborder="0" marginwidth="0" marginheight="0" width=100% height=80%></iframe>
+
+
+    </body>
+</html>

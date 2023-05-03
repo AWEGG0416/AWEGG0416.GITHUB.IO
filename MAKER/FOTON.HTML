@@ -1,0 +1,34 @@
+<html>
+<head>
+        <meta name="viewport" content="width=device-width,initial-scale=0.78">
+    <script>
+        function setIframeSource() {
+            // behavior of myIframe
+            var theSelect = document.getElementById('location');
+            var theIframe = document.getElementById('myIframe');
+            var theUrl;
+            theUrl = theSelect.options[theSelect.selectedIndex].value;
+            theIframe.src = theUrl;
+
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" method="post">
+
+        <select id="location" onchange="setIframeSource()" STYLE= "font-size: 40px; width: 100%; TEXT-ALIGN:CENTER"> 
+          <option value="">MODEL</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/FOTON/FOTON(AUMAN EST 430).HTML">AUMAN EST 430</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/FOTON/FOTON(BJ1030).HTML">BJ1030</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/FOTON/FOTON(BJ1065).HTML">BJ1065</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/FOTON/FOTON(BJ1078).HTML">BJ1078</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/FOTON/FOTON(BJ1088).HTML">BJ1088</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/FOTON/FOTON(BJ1108).HTML">BJ1108</option>
+
+            </select>
+    </form>
+    <iframe id="myIframe" src="https://AWEGG0416.GITHUB.IO/CARGO.jpg" frameborder="0" marginwidth="0" marginheight="0" width=100% height=80%></iframe>
+
+
+    </body>
+</html>

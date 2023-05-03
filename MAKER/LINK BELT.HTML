@@ -1,0 +1,40 @@
+<html>
+<head>
+        <meta name="viewport" content="width=device-width,initial-scale=0.78">
+    <script>
+        function setIframeSource() {
+            // behavior of myIframe
+            var theSelect = document.getElementById('location');
+            var theIframe = document.getElementById('myIframe');
+            var theUrl;
+            theUrl = theSelect.options[theSelect.selectedIndex].value;
+            theIframe.src = theUrl;
+
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" method="post">
+
+        <select id="location" onchange="setIframeSource()" STYLE= "font-size: 40px; width: 100%; TEXT-ALIGN:CENTER"> 
+          <option value="">MODEL</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/LINK BELT/75X3 600 LA.HTML">75X3 600 LA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/LINK BELT/80X3 600.HTML">80X3 600</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/LINK BELT/130X4LC 600LA.HTML">130X4LC 600LA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/LINK BELT/145X4DZ 600LA.HTML">145X4DZ 600LA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/LINK BELT/160X4EX 700LA.HTML">160X4EX 700LA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/LINK BELT/210X4EX 800STD.HTML">210X4EX 800STD</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/LINK BELT/245X4LC 800STD.HTML">245X4LC 800STD</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/LINK BELT/250X4EX 800LA.HTML">250X4EX 800LA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/LINK BELT/300X4EX 800LA.HTML">300X4EX 800LA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/LINK BELT/350X4EX 800LA.HTML">350X4EX 800LA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/LINK BELT/355X4S 800STD.HTML">355X4S 800STD</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/LINK BELT/490X4EX 900LA.HTML">490X4EX 900LA</option>
+
+            </select>
+    </form>
+    <iframe id="myIframe" src="https://AWEGG0416.GITHUB.IO/CARGO.jpg" frameborder="0" marginwidth="0" marginheight="0" width=100% height=80%></iframe>
+
+
+    </body>
+</html>

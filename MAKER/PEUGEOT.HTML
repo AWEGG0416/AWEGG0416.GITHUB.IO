@@ -1,0 +1,55 @@
+<html>
+<head>
+        <meta name="viewport" content="width=device-width,initial-scale=0.78">
+    <script>
+        function setIframeSource() {
+            // behavior of myIframe
+            var theSelect = document.getElementById('location');
+            var theIframe = document.getElementById('myIframe');
+            var theUrl;
+            theUrl = theSelect.options[theSelect.selectedIndex].value;
+            theIframe.src = theUrl;
+
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" method="post">
+
+        <select id="location" onchange="setIframeSource()" STYLE= "font-size: 40px; width: 100%; TEXT-ALIGN:CENTER"> 
+          <option value="">MODEL</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/PEUGEOT/208.HTML">208</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/PEUGEOT/301.HTML">301</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/PEUGEOT/308 SW.HTML">308 SW</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/PEUGEOT/308.HTML">308</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/PEUGEOT/408.HTML">408</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/PEUGEOT/508 SW.HTML">508 SW</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/PEUGEOT/508.HTML">508</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/PEUGEOT/2008.HTML">2008</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/PEUGEOT/3008.HTML">3008</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/PEUGEOT/5008.HTML">5008</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/PEUGEOT/BOXER L1H1.HTML">BOXER L1H1</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/PEUGEOT/BOXER L2H1.HTML">BOXER L2H1</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/PEUGEOT/BOXER L2H2.HTML">BOXER L2H2</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/PEUGEOT/BOXER L3H3.HTML">BOXER L3H3</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/PEUGEOT/BOXER L4H3.HTML">BOXER L4H3</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/PEUGEOT/C5.HTML">C5</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/PEUGEOT/DS9.HTML">DS9</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/PEUGEOT/EXPERT L2H1.HTML">EXPERT L2H1</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/PEUGEOT/EXPERT L3H1.HTML">EXPERT L3H1</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/PEUGEOT/LANDTREK.HTML">LANDTREK</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/PEUGEOT/PARTNER L1H1.HTML">PARTNER L1H1</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/PEUGEOT/PARTNER L2H1.HTML">PARTNER L2H1</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/PEUGEOT/RIFTER L1H1.HTML">RIFTER L1H1</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/PEUGEOT/RIFTER L2H1.HTML">RIFTER L2H1</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/PEUGEOT/TRAVELLER L1H1.HTML">TRAVELLER L1H1</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/PEUGEOT/TRAVELLER L2H1.HTML">TRAVELLER L2H1</option>
+
+
+            </select>
+    </form>
+    <iframe id="myIframe" src="https://AWEGG0416.GITHUB.IO/CARGO.jpg" frameborder="0" marginwidth="0" marginheight="0" width=100% height=80%></iframe>
+
+
+    </body>
+</html>

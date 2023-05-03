@@ -1,0 +1,58 @@
+<html>
+<head>
+        <meta name="viewport" content="width=device-width,initial-scale=0.78">
+    <script>
+        function setIframeSource() {
+            // behavior of myIframe
+            var theSelect = document.getElementById('location');
+            var theIframe = document.getElementById('myIframe');
+            var theUrl;
+            theUrl = theSelect.options[theSelect.selectedIndex].value;
+            theIframe.src = theUrl;
+
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" method="post">
+
+        <select id="location" onchange="setIframeSource()" STYLE= "font-size: 40px; width: 100%; TEXT-ALIGN:CENTER"> 
+          <option value="">MODEL</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MITSUBISHI/ASX.HTML">ASX</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MITSUBISHI/BE63DJ.HTML">BE63DJ</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MITSUBISHI/CARISMA.HTML">CARISMA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MITSUBISHI/CHARIOT.HTML">CHARIOT</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MITSUBISHI/CW4W.HTML">CW4W</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MITSUBISHI/ECLIPSE CROSS.HTML">ECLIPSE CROSS</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MITSUBISHI/ECLIPSE.HTML">ECLIPSE</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MITSUBISHI/FE71CB8L.HTML">FE71CB8L</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MITSUBISHI/FE73CE6L.HTML">FE73CE6L</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MITSUBISHI/FE83CE6L.HTML">FE83CE6L</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MITSUBISHI/FE85DHZSLNFA.HTML">FE85DHZSLNFA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MITSUBISHI/FM657LL.HTML">FM657LL</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MITSUBISHI/FV51JJ.HTML">FV51JJ</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MITSUBISHI/GALANT.HTML">GALANT</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MITSUBISHI/GLANDIS.HTML">GLANDIS</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MITSUBISHI/GS41.HTML">GS41</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MITSUBISHI/GS44S.HTML">GS44S</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MITSUBISHI/I MIEV.HTML">I MIEV</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MITSUBISHI/KL1T.HTML">KL1T</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MITSUBISHI/KL3T.HTML">KL3T</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MITSUBISHI/L200.HTML">L200</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MITSUBISHI/L300.HTML">L300</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MITSUBISHI/MIRAGE.HTML">MIRAGE</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MITSUBISHI/OUTLANDER.HTML">OUTLANDER</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MITSUBISHI/PAJERO.HTML">PAJERO</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MITSUBISHI/RVR.HTML">RVR</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MITSUBISHI/SPACE STAR.HTML">SPACE STAR</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MITSUBISHI/SPACE WAGON.HTML">SPACE WAGON</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MITSUBISHI/TRITON.HTML">TRITON</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/MITSUBISHI/XPANDER.HTML">XPANDER</option>
+
+            </select>
+    </form>
+    <iframe id="myIframe" src="https://AWEGG0416.GITHUB.IO/CARGO.jpg" frameborder="0" marginwidth="0" marginheight="0" width=100% height=80%></iframe>
+
+
+    </body>
+</html>

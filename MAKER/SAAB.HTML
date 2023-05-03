@@ -1,0 +1,34 @@
+<html>
+<head>
+        <meta name="viewport" content="width=device-width,initial-scale=0.78">
+    <script>
+        function setIframeSource() {
+            // behavior of myIframe
+            var theSelect = document.getElementById('location');
+            var theIframe = document.getElementById('myIframe');
+            var theUrl;
+            theUrl = theSelect.options[theSelect.selectedIndex].value;
+            theIframe.src = theUrl;
+
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" method="post">
+
+        <select id="location" onchange="setIframeSource()" STYLE= "font-size: 40px; width: 100%; TEXT-ALIGN:CENTER"> 
+          <option value="">MODEL</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SAAB/9-3.HTML">9-3</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SAAB/9-5.HTML">9-5</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SAAB/93.HTML">93</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SAAB/95.HTML">95</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SAAB/900.HTML">900</option>
+
+
+            </select>
+    </form>
+    <iframe id="myIframe" src="https://AWEGG0416.GITHUB.IO/CARGO.jpg" frameborder="0" marginwidth="0" marginheight="0" width=100% height=80%></iframe>
+
+
+    </body>
+</html>

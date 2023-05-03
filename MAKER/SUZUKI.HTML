@@ -1,0 +1,55 @@
+<html>
+<head>
+        <meta name="viewport" content="width=device-width,initial-scale=0.78">
+    <script>
+        function setIframeSource() {
+            // behavior of myIframe
+            var theSelect = document.getElementById('location');
+            var theIframe = document.getElementById('myIframe');
+            var theUrl;
+            theUrl = theSelect.options[theSelect.selectedIndex].value;
+            theIframe.src = theUrl;
+
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" method="post">
+
+        <select id="location" onchange="setIframeSource()" STYLE= "font-size: 40px; width: 100%; TEXT-ALIGN:CENTER"> 
+          <option value="">MODEL</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SUZUKI/ALTO800.HTML">ALTO800</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SUZUKI/APV.HTML">APV</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SUZUKI/BALENO SEDAN.HTML">BALENO SEDAN</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SUZUKI/BALENO WAGON.HTML">BALENO WAGON</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SUZUKI/BALENO.HTML">BALENO</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SUZUKI/CARRY 1.3 TRUCK.HTML">CARRY 1.3 TRUCK</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SUZUKI/CARRY 1.3 VAN.HTML">CARRY 1.3 VAN</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SUZUKI/CARRY PICKUP TRUCK.HTML">CARRY PICKUP TRUCK</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SUZUKI/CIAZ GLX.HTML">CIAZ GLX</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SUZUKI/CULTUS WAGON.HTML">CULTUS WAGON</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SUZUKI/CULTUS.HTML">CULTUS</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SUZUKI/ERTIGA.HTML">ERTIGA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SUZUKI/ESCUDE.HTML">ESCUDE</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SUZUKI/FMS JIMNY.HTML">FMS JIMNY</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SUZUKI/GRAND VITARA.HTML">GRAND VITARA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SUZUKI/IGNIS.HTML">IGNIS</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SUZUKI/JIMNY.HTML">JIMNY</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SUZUKI/KIZASHI.HTML">KIZASHI</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SUZUKI/LIANA.HTML">LIANA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SUZUKI/SPRESSO.HTML">SPRESSO</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SUZUKI/SWIFT SPORT.HTML">SWIFT SPORT</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SUZUKI/SWIFT.HTML">SWIFT</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SUZUKI/SX4 S-CROSS.HTML">SX4 S-CROSS</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SUZUKI/SX4 SEDAN.HTML">SX4 SEDAN</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SUZUKI/SX4.HTML">SX4</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SUZUKI/WAGON R.HTML">WAGON R</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/SUZUKI/YL7.HTML">YL7</option>
+
+
+            </select>
+    </form>
+    <iframe id="myIframe" src="https://AWEGG0416.GITHUB.IO/CARGO.jpg" frameborder="0" marginwidth="0" marginheight="0" width=100% height=80%></iframe>
+
+    </body>
+</html>

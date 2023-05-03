@@ -1,0 +1,56 @@
+<html>
+<head>
+        <meta name="viewport" content="width=device-width,initial-scale=0.78">
+    <script>
+        function setIframeSource() {
+            // behavior of myIframe
+            var theSelect = document.getElementById('location');
+            var theIframe = document.getElementById('myIframe');
+            var theUrl;
+            theUrl = theSelect.options[theSelect.selectedIndex].value;
+            theIframe.src = theUrl;
+
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" method="post">
+
+        <select id="location" onchange="setIframeSource()" STYLE= "font-size: 40px; width: 100%; TEXT-ALIGN:CENTER"> 
+          <option value="">MODEL</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BMW/1 SERIES.HTML">1 SERIES</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BMW/2 SERIES.HTML">2 SERIES</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BMW/3 GT.HTML">3 GT</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BMW/3 SERIES.HTML">3 SERIES</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BMW/4 COUPE.HTML">4 COUPE</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BMW/5.HTML">5</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BMW/6 SERIES.HTML">6 SERIES</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BMW/7.HTML">7</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BMW/8.HTML">8</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BMW/318I.HTML">318I</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BMW/320I.HTML">320I</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BMW/530I.HTML">530I</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BMW/I3.HTML">I3</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BMW/I4.HTML">I4</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BMW/I7.HTML">I7</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BMW/I8.HTML">I8</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BMW/IX.HTML">IX</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BMW/M4.HTML">M4</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BMW/MINI CLUBMAN.HTML">MINI CLUBMAN</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BMW/MINI COUNTRYMAN.HTML">MINI COUNTRYMAN</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BMW/ROLLS ROYCE.HTML">ROLLS ROYCE</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BMW/X1.HTML">X1</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BMW/X2.HTML">X2</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BMW/X3.HTML">X3</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BMW/X4.HTML">X4</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BMW/X5.HTML">X5</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BMW/X6.HTML">X6</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BMW/X7.HTML">X7</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BMW/Z4.HTML">Z4</option>         
+            </select>
+    </form>
+    <iframe id="myIframe" src="https://AWEGG0416.GITHUB.IO/CARGO.jpg" frameborder="0" marginwidth="0" marginheight="0" width=100% height=80%></iframe>
+
+
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<html>
+<head>
+        <meta name="viewport" content="width=device-width,initial-scale=0.78">
+    <script>
+        function setIframeSource() {
+            // behavior of myIframe
+            var theSelect = document.getElementById('location');
+            var theIframe = document.getElementById('myIframe');
+            var theUrl;
+            theUrl = theSelect.options[theSelect.selectedIndex].value;
+            theIframe.src = theUrl;
+
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" method="post">
+
+        <select id="location" onchange="setIframeSource()" STYLE= "font-size: 40px; width: 100%; TEXT-ALIGN:CENTER"> 
+          <option value="">MODEL</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BENZ/A-CLASS.HTML">A-CLASS</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BENZ/AMG GT.HTML">AMG GT</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BENZ/C32 AMG.HTML">C32 AMG</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BENZ/C200.HTML">C200</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BENZ/C200CDI.HTML">C200CDI</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BENZ/C220CDI.HTML">C220CDI</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BENZ/C250.HTML">C250</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BENZ/CITAN.HTML">CITAN</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BENZ/E200.HTML">E200</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BENZ/E320 4M.HTML">E320 4M</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BENZ/EQA.HTML">EQA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BENZ/EQC.HTML">EQC</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BENZ/EQE.HTML">EQE</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BENZ/EQS.HTML">EQS</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BENZ/GLA CLASS.HTML">GLA CLASS</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BENZ/GLB CLASS.HTML">GLB CLASS</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BENZ/GLB.HTML">GLB</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BENZ/.GLCHTML">GLC</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BENZ/GLE.HTML">GLE</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BENZ/M2.HTML">M2</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BENZ/MAYBACH.HTML">MAYBACH</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/BENZ/V-CLASS.HTML">V-CLASS</option>          
+            </select>
+    </form>
+    <iframe id="myIframe" src="https://AWEGG0416.GITHUB.IO/CARGO.jpg" frameborder="0" marginwidth="0" marginheight="0" width=100% height=80%></iframe>
+
+
+    </body>
+</html>

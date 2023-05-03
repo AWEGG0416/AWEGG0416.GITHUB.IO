@@ -1,0 +1,43 @@
+<html>
+<head>
+        <meta name="viewport" content="width=device-width,initial-scale=0.78">
+    <script>
+        function setIframeSource() {
+            // behavior of myIframe
+            var theSelect = document.getElementById('location');
+            var theIframe = document.getElementById('myIframe');
+            var theUrl;
+            theUrl = theSelect.options[theSelect.selectedIndex].value;
+            theIframe.src = theUrl;
+
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" method="post">
+
+        <select id="location" onchange="setIframeSource()" STYLE= "font-size: 40px; width: 100%; TEXT-ALIGN:CENTER"> 
+          <option value="">MODEL</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/OPEL/ADAM.HTML">ADAM</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/OPEL/ASTRA ESTATE.HTML">ASTRA ESTATE</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/OPEL/ASTRA.HTML">ASTRA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/OPEL/CASCADA.HTML">CASCADA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/OPEL/COMBO CARGO VAN.HTML">COMBO CARGO VAN</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/OPEL/COMBO LIFE.HTML">COMBO LIFE</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/OPEL/CORSA.HTML">CORSA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/OPEL/CROSSLAND X.HTML">CROSSLAND X</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/OPEL/GRANDLAND.HTML">GRANDLAND</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/OPEL/INSIGNIA.HTML">INSIGNIA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/OPEL/MERIVA.HTML">MERIVA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/OPEL/MOKKA.HTML">MOKKA</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/OPEL/MOVANO.HTML">MOVANO</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/OPEL/VIVARO.HTML">VIVARO</option>
+          <option value="https://AWEGG0416.GITHUB.IO/CARGO/OPEL/ZAFIRA LIFE L.HTML">ZAFIRA LIFE L</option>
+
+            </select>
+    </form>
+    <iframe id="myIframe" src="https://AWEGG0416.GITHUB.IO/CARGO.jpg" frameborder="0" marginwidth="0" marginheight="0" width=100% height=80%></iframe>
+
+
+    </body>
+</html>
