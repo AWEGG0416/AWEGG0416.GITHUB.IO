@@ -1,0 +1,31 @@
+<html>
+<head>
+        <title>PCO Info</title>
+        <meta name="viewport" content="width=device-width,initial-scale=0.78">
+    <script>
+        function setIframeSource() {
+            // behavior of myIframe
+            var theSelect = document.getElementById('location');
+            var theIframe = document.getElementById('myIframe');
+            var theUrl;
+            theUrl = theSelect.options[theSelect.selectedIndex].value;
+            theIframe.src = theUrl;
+
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" method="post">
+            <p style="text-align:center;">
+          <label STYLE= "font-size: 40px;"> SELECT SUBJECT</label></P>
+        <select id="location" onchange="setIframeSource()" STYLE= "font-size: 40px; width: 100%; TEXT-ALIGN:CENTER"> 
+          <option value="선박선택">항목선택</option> 
+          <option value="https://awegg0416.github.io/VESSEL.HTML">선박 정보</option> 
+          <option value="https://awegg0416.github.io/CARGO.HTML">화물 정보</option>
+       </select>
+    </form>
+    <iframe id="myIframe" src="https://AWEGG0416.GITHUB.IO/READY.jpg" frameborder="0" marginwidth="0" marginheight="0" width=100% height=80%></iframe>
+
+
+    </body>
+</html>
