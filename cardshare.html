@@ -1,0 +1,54 @@
+<html>
+<head>
+        <title>PCO Info</title>
+        <meta name="viewport" content="width=device-width,initial-scale=0.78">
+    <script>
+        function setIframeSource() {
+            // behavior of myIframe
+            var theSelect = document.getElementById('location');
+            var theIframe = document.getElementById('myIframe');
+            var theUrl;
+            theUrl = theSelect.options[theSelect.selectedIndex].value;
+            theIframe.src = theUrl;
+
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" method="post">
+            <p style="text-align:center;">
+          <label STYLE= "font-size: 40px;"> 앗차사고 카드 공유기</label></P>
+        <select id="location" onchange="setIframeSource()" STYLE= "font-size: 40px; width: 100%; TEXT-ALIGN:CENTER"> 
+          <option value="선박선택">항목선택</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/E.PILOT.HTML">작업 일반</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/E.ETA.HTML">Car 작업</option>
+          <option value="https://www.komdi.or.kr/ukiwi/biz/info/ukiwiBizInfoIMDGCodeList.do">H&H 작업</option>  
+          <option value="https://AWEGG0416.GITHUB.IO/E.OVERHANG.HTML">BB 작업</option>
+          <option value="https://AWEGG0416.GITHUB.IO/E.PORTCODE.CC.HTML">추락 위험</option> 
+          <option value="https://AWEGG0416.GITHUB.IO/E.PORTCODE.CC.HTML">기상 관련</option>
+          <option value="https://poki.com/">======</option> 
+       </select>
+    </form>
+    <iframe id="myIframe" src="https://AWEGG0416.GITHUB.IO/READY.jpg" frameborder="0" marginwidth="0" marginheight="0" width=100% height=80%></iframe>
+
+
+  <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+<script>
+    Kakao.init("fe5428503fe61ac79e396c5a11525d2d");   // 아까 복사해둔 JavaScript 키
+    function sendLink() {
+      Kakao.Link.sendCustom({
+        templateId: 125716,   // 복사해둔 템플릿 ID
+        templateArgs: {
+          title: "{{ page.title }}",
+          description: "{{ page.excerpt }}",
+          url : "{{ page.url }}",
+        },
+      });
+    }
+</script>
+<a id="kakao-link-btn" href="javascript:sendLink()">
+    <img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" />
+</a>
+  
+    </body>
+</html>
