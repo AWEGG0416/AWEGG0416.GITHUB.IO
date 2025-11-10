@@ -13,33 +13,10 @@
 
         }
     </script>
-  <style>
-  img {
-    width: 800px;
-    height: 800px;
-    object-fit: contain;
 
-  }
-
-</style>
 
 </head>
 <body>
-    <form id="form1" method="post">
-            <p style="text-align:center;">
-          <label STYLE= "font-size: 40px;"> 앗차사고 카드 공유기</label></P>
-        <select id="location" onchange="setIframeSource()" STYLE= "font-size: 40px; width: 100%; TEXT-ALIGN:CENTER"> 
-          <option value="선박선택">항목선택</option> 
-          <option value="https://AWEGG0416.GITHUB.IO/E.PILOT.HTML">작업 일반</option> 
-          <option value="https://AWEGG0416.GITHUB.IO/E.ETA.HTML">Car 작업</option>
-          <option value="https://www.komdi.or.kr/ukiwi/biz/info/ukiwiBizInfoIMDGCodeList.do">H&H 작업</option>  
-          <option value="https://AWEGG0416.GITHUB.IO/E.OVERHANG.HTML">BB 작업</option>
-          <option value="https://AWEGG0416.GITHUB.IO/E.PORTCODE.CC.HTML">추락 위험</option> 
-          <option value="https://AWEGG0416.GITHUB.IO/E.PORTCODE.CC.HTML">기상 관련</option>
-          <option value="https://poki.com/">======</option> 
-       </select>
-    </form>
-    <iframe id="myIframe" src="https://AWEGG0416.GITHUB.IO/READY.jpg" frameborder="0" marginwidth="0" marginheight="0" width=100% height=80%></iframe>
 
 
   <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
@@ -65,12 +42,27 @@
         },
       });
     };
+     function sendLink3() {
+      Kakao.Link.sendCustom({
+        templateId: 125744,   // 복사해둔 템플릿 ID
+        templateArgs: {
+          title: "{{ page.title }}",
+          description: "{{ page.excerpt }}",
+          url : "{{ https://awegg0416.github.io/card/c02.png }}",
+        },
+      });
+    };
 </script>
 <a id="kakao-link-btn" href="javascript:sendLink()">
-    <img src="https://awegg0416.github.io/card/b01.png" />
+    <img src="https://awegg0416.github.io/card/b01.png" width="100%" />
 </a>
+&nbsp
  <a id="kakao-link-btn" href="javascript:sendLink2()">
-    <img src="https://awegg0416.github.io/card/c01.png" />
+    <img src="https://awegg0416.github.io/card/c01.png" width="100%" />
+</a> 
+  &nbsp
+ <a id="kakao-link-btn" href="javascript:sendLink3()">
+    <img src="https://awegg0416.github.io/card/c02.png" width="100%" />
 </a> 
     </body>
 </html>
