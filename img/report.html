@@ -1,36 +1,10 @@
-<script>
-// by 행복한고니(e-mail : gonom9 at empal.com, MSN : gonom9 at hotmail.com)
 
-function resizeFrame(name){
-        var oBody = document.body;
-        var oFrame = parent.document.all(name);
-        var min_height = 320; //iframe의 최소높이(너무 작아지는 걸 막기위함, 픽셀단위, 편집가능)
-        var min_width = 465; //iframe의 최소너비
-        var i_height = oBody.scrollHeight + (oBody.offsetHeight-oBody.clientHeight);
-        var i_width = oBody.scrollWidth + (oBody.offsetWidth-oBody.clientWidth);
-
-        if(i_height < min_height) i_height = min_height;
-        if(i_width < min_width) i_width = min_width;
-        oFrame.style.height = i_height;
-        oFrame.style.width = i_width;
-
-        parent.scrollTo(1,1); //부모문서의 스크롤 위치를 1, 1로 옮긴다.(오감도님이 지적해주셨어요~^^)
-}
-</script>
 
 <table style="border-collapse: collapse; width: 100%; height: 238px;" border="1" data-ke-align="alignLeft" data-ke-style="style13">
 <tbody>
 <tr style="height: 17px;">
-<img src="https://AWEGG0416.GITHUB.IO/img/report.png">
+<img src="https://AWEGG0416.GITHUB.IO/img/report.png" width="100%">
 </tr>
 </tbody>
 </table>
 
-<script>
-var oldFn = "";
-if(window.onload != null){
-        oldFn = new String(window.onload); //window.onload의 함수를 문자열로 받는다
-        oldFn = oldFn.substring(22,oldFn.length-2);
-}
-window.onload = new Function("resizeFrame(FRAMEID);" + oldFn); //새함수와 기존의 함수를 추가해서 onload이벤트에 할당
-</script>
