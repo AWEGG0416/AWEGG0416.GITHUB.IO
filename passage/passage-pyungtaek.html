@@ -1,0 +1,28 @@
+<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+<script>
+    Kakao.init("fe5428503fe61ac79e396c5a11525d2d");   // 아까 복사해둔 JavaScript 키
+    function sendLink() {
+      Kakao.Link.sendCustom({
+        templateId: 125817,   // 복사해둔 템플릿 ID
+        templateArgs: {
+          title: "{{ page.title }}",
+          description: "{{ page.excerpt }}",
+          url : "{{ https://awegg0416.github.io/card/g01.png }}",
+        },
+      });
+    };
+</script>
+<a id="kakao-link-btn" href="javascript:sendLink()">
+    <img src="https://awegg0416.github.io/img/send.png" width="100%" />
+</a>
+&nbsp
+
+<img src = "https://AWEGG0416.GITHUB.IO/img/passage-pyungtaek_1.png" width="100%">
+<img src = "https://AWEGG0416.GITHUB.IO/img/passage-pyungtaek_2.png" width="100%">
+<img src = "https://AWEGG0416.GITHUB.IO/img/passage-pyungtaek_3_1.png" width="100%">
+<img src = "https://AWEGG0416.GITHUB.IO/img/passage-pyungtaek_3_2.png" width="100%">
+<img src = "https://AWEGG0416.GITHUB.IO/img/passage-pyungtaek_4.png" width="100%">
+
+<script>
+  self.resizeTo(document.body.scrollWidth, document.body.scrollHeight + 10);
+</script>

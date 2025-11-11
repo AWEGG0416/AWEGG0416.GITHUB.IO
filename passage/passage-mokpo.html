@@ -1,0 +1,32 @@
+  <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+<script>
+    Kakao.init("fe5428503fe61ac79e396c5a11525d2d");   // 아까 복사해둔 JavaScript 키
+    function sendLink() {
+      Kakao.Link.sendCustom({
+        templateId: 125814,   // 복사해둔 템플릿 ID
+        templateArgs: {
+          title: "{{ page.title }}",
+          description: "{{ page.excerpt }}",
+          url : "{{ https://awegg0416.github.io/card/g01.png }}",
+        },
+      });
+    };
+</script>
+<a id="kakao-link-btn" href="javascript:sendLink()">
+    <img src="https://awegg0416.github.io/img/send.png" width="100%" />
+</a>
+&nbsp
+
+<img src = "https://AWEGG0416.GITHUB.IO/img/passage-mokpo_1.png" width="100%">
+<img src = "https://AWEGG0416.GITHUB.IO/img/passage-mokpo_2.png" width="100%">
+<img src = "https://AWEGG0416.GITHUB.IO/img/passage-mokpo_3.png" width="100%">
+<img src = "https://AWEGG0416.GITHUB.IO/img/passage-mokpo_4.png" width="100%">
+<img src = "https://AWEGG0416.GITHUB.IO/img/passage-mokpo_5_1.png" width="100%">
+<img src = "https://AWEGG0416.GITHUB.IO/img/passage-mokpo_5_2.png" width="100%">
+<img src = "https://AWEGG0416.GITHUB.IO/img/passage-mokpo_5_3.png" width="100%">
+<img src = "https://AWEGG0416.GITHUB.IO/img/passage-mokpo_5_4.png" width="100%">
+<img src = "https://AWEGG0416.GITHUB.IO/img/passage-mokpo_5_5.png" width="100%">
+<img src = "https://AWEGG0416.GITHUB.IO/img/passage-mokpo_5_6.png" width="100%">
+<script>
+  self.resizeTo(document.body.scrollWidth, document.body.scrollHeight + 10);
+</script>
